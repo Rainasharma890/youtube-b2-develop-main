@@ -2,15 +2,11 @@
 import kalank from './images/kalank.jpg'
 import avtar from './images/avtar.png'
 import {GoHomeFill} from 'react-icons/go'
-import {BsFire} from 'react-icons/bs'
-import {MdOutlineSubscriptions, MdOutlineWatchLater} from 'react-icons/md'
 
 import Header from './Header'
 import { Link } from 'react-router-dom';
 
 import videosJson from './useful-data-main/videos.json'
-import { BiHistory } from 'react-icons/bi'
-
 
 
 function VideoGrid(props){
@@ -68,36 +64,21 @@ function Home(){
                         <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
                     <button class="yt-side-button">
-                        <BsFire/> <span class="side-button-label">Trending</span>
+                        <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
                     <button class="yt-side-button">
-                        <MdOutlineSubscriptions /> <span class="side-button-label">Subscriptions</span>
+                        <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
                     <hr />
                     <button class="yt-side-button">
-                        <BiHistory/> <span class="side-button-label">Shorts</span>
+                        <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
                     <button class="yt-side-button">
-                        <BiHistory /> <span class="side-button-label">History</span>
+                        <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
                     <button class="yt-side-button">
-                         <MdOutlineWatchLater/> 
-                        
-                        <span class="side-button-label">Watch Later</span>
+                        <GoHomeFill /> <span class="side-button-label">Home</span>
                     </button>
-                    <hr/>
-                    <h6 class="fav">Favourites &gt;</h6>
-                    <button class="yt-side-button">
-                    <img src={avtar} height={'40px'} width={'40px'}></img> 
-                     <span class="side-button-label">Carry Minati</span>
-                    </button><button class="yt-side-button">
-                    <img src={avtar} height={'40px'} width={'40px'}></img> 
-                     <span class="side-button-label">BB ki vines</span>
-                    </button><button class="yt-side-button">
-                    <img src={avtar} height={'40px'} width={'40px'}></img> 
-                     <span class="side-button-label">T-Series</span>
-                    </button>
-
                 </div>
                 <div class="main-right">
                     {videosJson.map((video) => {

@@ -177,7 +177,7 @@ td, th {
 
 .yt-side-button{
   display: flex;
-  width: 100%;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   padding-left: 20px;
@@ -215,8 +215,9 @@ td, th {
   margin-top: 10px;
 }
 
- /* width: 60%; */
-
+.suggestion-image{
+  /* width: 60%; */
+}
 
 .suggestion-image > img {
   border-radius: 3%;
@@ -300,8 +301,4 @@ justify-content: space-between;
   
 }
 
-.fav{
-  margin-left: 20px;
-
-}
 
